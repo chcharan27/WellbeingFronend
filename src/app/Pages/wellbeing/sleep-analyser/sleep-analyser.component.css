@@ -25,7 +25,7 @@
 }
 
 .form-container h2 {
-  font-size: 32px;
+  font-size: 24px;
   color: #00695c;
   margin-bottom: 20px;
 }
@@ -115,11 +115,3 @@ input[type="text"]:focus {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
