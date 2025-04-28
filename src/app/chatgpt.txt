@@ -1,0 +1,180 @@
+/* Dashboard General Styling */
+.dashboard-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #00695c, #26a69a);
+  min-height: 100vh;
+}
+
+/* Upper Section */
+.upper-section {
+  display: flex;
+  gap: 30px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Left and Right Sides */
+.left-side,
+.right-side {
+  flex: 1;
+}
+
+.left-side {
+  max-width: 60%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Buttons (Wide Buttons) */
+.wide-btn {
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #004d40;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.wide-btn:hover {
+  background-color: #2bbbad;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Lower Section */
+.lower-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Mood Analyzer and Reminders Section */
+.app-mood-analyser,
+.app-reminders {
+  background-color: #f1f8f7;
+  border-radius: 10px;
+  padding: 20px;
+  color: #004d40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: transform 0.3s;
+}
+
+.app-mood-analyser:hover,
+.app-reminders:hover {
+  transform: scale(1.02);
+}
+
+/* Reusing fadeInUp animation from Landing Page */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+                change the below code according to above
+
+/* Container Styling */
+.reminder-scheduler-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: var(--background-color, #f5f5f5); */
+  }
+  
+  /* Form Container Styling */
+  .form-container {
+    background-color: #fff;
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-container h2 {
+    font-size: 24px;
+    color: darkblue;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .btn.submit-btn {
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn.submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Reminder Display Styling */
+  .reminder-display {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

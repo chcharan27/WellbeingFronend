@@ -1,0 +1,75 @@
+/* General Mood Container Styling */
+.mood-container {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Bad Mood Section Styling */
+.bad-mood {
+  background-color: #ffebee;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.bad-mood:hover {
+  background-color: #ffcdd2;
+}
+
+/* Heading Styles */
+.bad-mood h2 {
+  color: #d32f2f;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.bad-mood h3 {
+  color: #c62828;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Blockquote Styling */
+.bad-mood blockquote {
+  font-style: italic;
+  color: #c62828;
+  border-left: 4px solid #d32f2f;
+  padding-left: 10px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* List Styling */
+.bad-mood ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bad-mood ul li {
+  font-size: 18px;
+  margin: 12px 0;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+.bad-mood ul li:hover {
+  transform: translateX(10px);
+}
+
+/* Link Styling */
+.bad-mood a {
+  color: #d32f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bad-mood a:hover {
+  color: #b71c1c;
+  text-decoration: underline;
+}

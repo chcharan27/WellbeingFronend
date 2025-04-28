@@ -1,0 +1,65 @@
+/* General Mood Container Styling */
+.mood-container {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Average Mood Section Styling */
+.average-mood {
+  background-color: #e0f7fa;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.average-mood:hover {
+  background-color: #b2ebf2;
+}
+
+/* Heading Styles */
+.average-mood h2 {
+  color: #00695c;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.average-mood h3 {
+  color: #004d40;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+.average-mood ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.average-mood ul li {
+  font-size: 18px;
+  margin: 12px 0;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+.average-mood ul li:hover {
+  transform: translateX(10px);
+}
+
+/* Link Styling */
+.average-mood a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.average-mood a:hover {
+  color: #26a69a;
+  text-decoration: underline;
+}

@@ -1,0 +1,125 @@
+/* Container Styling */
+.sleep-analyser-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #00695c, #26a69a);
+  min-height: 100vh;
+}
+
+/* Upper Section Styling */
+.upper-section {
+  padding: 30px;
+  background-color: #ffffff;
+  color: #004d40;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-container h2 {
+  font-size: 32px;
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #004d40;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: #26a69a;
+  outline: none;
+}
+
+/* Submit Button */
+.btn.submit-btn {
+  background-color: #26a69a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.submit-btn:hover {
+  background-color: #2bbbad;
+  transform: scale(1.05);
+}
+
+/* Lower Section Styling */
+.lower-section {
+  padding: 30px;
+  background-color: #ffffff;
+  color: #004d40;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Success/Error Message Styles */
+.success-message {
+  color: green;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.error-message {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Reused Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
