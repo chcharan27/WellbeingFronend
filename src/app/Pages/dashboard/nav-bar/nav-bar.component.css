@@ -194,3 +194,58 @@
 .sos-btn:hover {
   background-color: darkred;
 }
+
+/* Services Dropdown Styled to Match Dashboard */
+.services-dropdown {
+  margin-top: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  
+}
+
+.services-button {
+  text-decoration: none;
+  font-size: 16px;
+  color: #80deea;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  height: 30px;
+  
+}
+
+.services-button:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+.services-list {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.services-list a {
+  color: #004d40;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.services-list a:hover {
+  background-color: #e0f7fa;
+}
+
+.services-dropdown:hover .services-list {
+  display: block;
+}

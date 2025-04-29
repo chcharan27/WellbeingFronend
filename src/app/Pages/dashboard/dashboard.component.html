@@ -1,24 +1,80 @@
 <app-nav-bar></app-nav-bar>
 <div class="dashboard-container">
-    <div class="upper-section">
-      <!-- Left side: Mood Analyser -->
-      <div class="left-side">
-        <app-mood-analyser></app-mood-analyser>
-      </div>
-  
-      <!-- Right side: Buttons -->
-      <div class="right-side">
-        <button class="btn wide-btn" routerLink="/sleep-analyser">Sleep Analyser</button>
-        <button class="btn wide-btn" routerLink="/reminder-scheduler">Reminder Scheduler</button>
-        <button class="btn wide-btn" routerLink="/mental-health">Mood Tracker</button>
-        <button class="btn wide-btn" routerLink="/emergency-services">Get Emergency Services</button>
-        <button class="btn wide-btn" routerLink="/report-incident">Report an Incident</button>
-      </div>
-    </div>
-  
-    <!-- Lower Section: Reminders -->
-    <div class="lower-section">
-      <app-reminder-history></app-reminder-history>
-    </div>
+  <!-- Center Section with Welcome and Tables -->
+  <div class="center-heading-with-tables">
+
+    <!-- Table Above Heading -->
+    <!-- <table class="dashboard-table">
+      <caption>User Summary</caption>
+      <tr>
+        <th>User</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Last Login</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>Admin</td>
+        <td>Active</td>
+        <td>2025-04-27 10:15 AM</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>User</td>
+        <td>Active</td>
+        <td>2025-04-27 09:45 AM</td>
+      </tr>
+    </table> -->
+
+    <!-- Welcome Heading -->
+    <h1>Welcome to Your Wellbeing Dashboard</h1>
+    <p class="welcome-subtext">Track your mood, health, and reminders all in one place.</p>
+
+    <!-- Table Below Heading -->
+    <table class="dashboard-table">
+      <caption>Daily Health Overview</caption>
+      <tr>
+        <th>Metric</th>
+        <th>Status</th>
+        <th>Trend</th>
+      </tr>
+      <tr>
+        <td>Sleep Quality</td>
+        <td>Good</td>
+        <td>↑ Improving</td>
+      </tr>
+      <tr>
+        <td>Mood</td>
+        <td>Neutral</td>
+        <td>→ Stable</td>
+      </tr>
+      <tr>
+        <td>Reminders</td>
+        <td>2 Pending</td>
+        <td>↓ Overdue</td>
+      </tr>
+    </table>
+
   </div>
-  
+
+  <!-- Upper Dashboard Section -->
+  <div class="upper-section">
+    <div class="left-side">
+      <!-- <app-mood-analyser></app-mood-analyser> -->
+    </div>
+    <!-- You can enable this section later
+    <div class="right-side">
+      <button class="btn wide-btn" routerLink="/sleep-analyser">Sleep Analyser</button>
+      <button class="btn wide-btn" routerLink="/reminder-scheduler">Reminder Scheduler</button>
+      <button class="btn wide-btn" routerLink="/mental-health">Mood Tracker</button>
+      <button class="btn wide-btn" routerLink="/emergency-services">Get Emergency Services</button>
+      <button class="btn wide-btn" routerLink="/report-incident">Report an Incident</button>
+    </div>
+    -->
+  </div>
+
+  <!-- Lower Dashboard Section -->
+  <div class="lower-section">
+    <app-reminder-history></app-reminder-history>
+  </div>
+</div>

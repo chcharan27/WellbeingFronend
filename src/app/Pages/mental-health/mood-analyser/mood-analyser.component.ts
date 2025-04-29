@@ -25,7 +25,7 @@ export class MoodAnalyserComponent implements OnInit {
     this.userData = localStorage.getItem('userId');
     console.log(this.userData);
     this.http
-      .get(`https://localhost:7004/api/MoodTrackers/getMoodDataByUserID?userid=${this.userData}`)
+      .get(`https://localhost:7004/api/MoodTrackers`)
       .subscribe({
         next: (res: any) => {
           console.log(res);
