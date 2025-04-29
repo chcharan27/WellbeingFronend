@@ -78,8 +78,11 @@
   }
   
   .navbar .logo img {
-    height: 40px;
-    animation: fadeIn 1s ease-in-out;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
   }
   
   .sos-btn {
