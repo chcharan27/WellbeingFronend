@@ -9,5 +9,18 @@ import { RouterLink } from '@angular/router';
   styleUrl: './admin-dashboard.component.css'
 })
 export class AdminDashboardComponent {
+  userData = {
+    Name: '',
+    Age: null,
+    PhoneNumber: '',
+    Email: '',
+    Password: '',
+    BloodGroup: '',
+    MaritalStatus: '',
+    JobDescription: '',
+    role: ''
+  };
 
+  // Later use HTTP GET to populate `userData`
 }
+
