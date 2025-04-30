@@ -9,13 +9,28 @@
     <!-- Questions -->
     <div class="question" *ngFor="let question of questions; let i = index">
       <label>{{ question.text }}</label>
-      <select [(ngModel)]="question.answer" [name]="'q' + i" required>
-        <option value="">Select an answer</option>
-        <option [value]="0">No</option>
-        <option [value]="1">Yes</option>
-        <!-- <option [value]="3">Often</option>
-        <option [value]="4">Always</option> -->
-      </select>
+
+      <div class="radio-group">
+        <label>
+          <input
+            type="radio"
+            [(ngModel)]="question.answer"
+            [name]="'q' + i"
+            [value]="0"
+            required
+          />
+          No
+        </label>
+        <label>
+          <input
+            type="radio"
+            [(ngModel)]="question.answer"
+            [name]="'q' + i"
+            [value]="1"
+          />
+          Yes
+        </label>
+      </div>
     </div>
 
     <!-- Submit Button -->

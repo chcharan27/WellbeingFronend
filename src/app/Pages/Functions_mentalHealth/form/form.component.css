@@ -58,3 +58,14 @@ select {
 .btn.submit-btn:hover:enabled {
   background-color: #00695c;
 }
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
